@@ -19,6 +19,10 @@ jobs:
       - name: Checkout target repo
         uses: actions/checkout@v3
 
+       - name: Pull
+       run:
+         git pull
+
       # Step 2: run the sync action
       - name: Sync upstream changes
         id: sync
